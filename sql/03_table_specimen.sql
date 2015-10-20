@@ -1,0 +1,33 @@
+SELECT '-- creating specimen' AS '';
+DROP TABLE IF EXISTS specimen;
+CREATE TABLE IF NOT EXISTS specimen (
+  icgc_specimen_id varchar(64) DEFAULT NULL,
+  project_code varchar(64) DEFAULT NULL,
+  study_specimen_involved_in varchar(64) DEFAULT NULL,
+  submitted_specimen_id varchar(64) DEFAULT NULL,
+  icgc_donor_id varchar(64) DEFAULT NULL,
+  submitted_donor_id varchar(64) DEFAULT NULL,
+  specimen_type varchar(64) DEFAULT NULL,
+  specimen_type_other varchar(64) DEFAULT NULL,
+  specimen_interval varchar(64) DEFAULT NULL,
+  specimen_donor_treatment_type varchar(64) DEFAULT NULL,
+  specimen_donor_treatment_type_other varchar(64) DEFAULT NULL,
+  specimen_processing varchar(64) DEFAULT NULL,
+  specimen_processing_other varchar(64) DEFAULT NULL,
+  specimen_storage varchar(64) DEFAULT NULL,
+  specimen_storage_other varchar(64) DEFAULT NULL,
+  tumour_confirmed varchar(64) DEFAULT NULL,
+  specimen_biobank varchar(64) DEFAULT NULL,
+  specimen_biobank_id varchar(64) DEFAULT NULL,
+  specimen_available varchar(64) DEFAULT NULL,
+  tumour_histological_type varchar(64) DEFAULT NULL,
+  tumour_grading_system varchar(64) DEFAULT NULL,
+  tumour_grade varchar(64) DEFAULT NULL,
+  tumour_grade_supplemental varchar(64) DEFAULT NULL,
+  tumour_stage_system varchar(64) DEFAULT NULL,
+  tumour_stage varchar(64) DEFAULT NULL,
+  tumour_stage_supplemental varchar(64) DEFAULT NULL,
+  digital_image_of_stained_section varchar(64) DEFAULT NULL,
+  percentage_cellularity varchar(64) DEFAULT NULL,
+  level_of_cellularity varchar(64) DEFAULT NULL
+);

@@ -1,0 +1,4 @@
+SELECT '-- loading ssm' AS '';
+SELECT COUNT(*) FROM ssm;
+LOAD DATA LOCAL INFILE "./mod_ssm.tsv" INTO TABLE ssm IGNORE 1 LINES;
+SELECT COUNT(*) FROM ssm;
